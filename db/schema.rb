@@ -13,6 +13,9 @@
 ActiveRecord::Schema.define(version: 20180608005955) do
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci" do |t|
+    t.text     "name",       limit: 65535
+    t.text     "lastname",   limit: 65535
+    t.text     "RUT",        limit: 65535
     t.text     "username",   limit: 65535
     t.text     "password",   limit: 65535
     t.string   "tipo"
