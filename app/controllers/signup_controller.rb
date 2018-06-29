@@ -6,7 +6,7 @@ class SignupController < ApplicationController
 		email = params[:username]
 		contraseña = params[:pass]
 		tipo = params[:tipo]
-		usuario = User.new(:name => nombre, :lastname => apellido, :RUT => rut, :username => email, :password => contraseña, :tipo => tipo)
+		usuario = User.new(:name => nombre, :lastname => apellido, :RUT => rut, :username => email, :password => contraseña, :id_tipo => tipo)
 		usuario.save
 		render json:{status:'SUCCESS', message:'Persona guardada',data:usuario}, status: :ok
 	end

@@ -6,7 +6,7 @@ class CreateUsers < ActiveRecord::Migration[5.0]
       t.text :RUT
       t.text :username
       t.text :password
-      t.string :tipo
+      t.integer :rol_id
 
       t.timestamps
     end

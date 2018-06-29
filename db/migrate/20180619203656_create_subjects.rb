@@ -3,7 +3,6 @@ class CreateSubjects < ActiveRecord::Migration[5.0]
     create_table :subjects do |t|
       t.integer :nrc
       t.string :name
-      t.integer :id_user
 
       t.timestamps
     end
